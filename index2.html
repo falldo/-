@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>홈페이지</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            margin: 0;
+            border: none;
+        }
+        .block{
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr;
+        grid-template-rows: 160px 1fr 100px;
+        }
+        .grid{
+             /* border: 1px solid black; */
+            }
+        .title{
+            /* border: 1px solid black; */
+            width: 300px;
+            margin-left: 50px;
+            margin-top: 20px;
+            font-family: 'Jua', sans-serif;
+            
+        }
+
+        #menu{
+            width: 800px;
+            height: 70px;
+            /* border: 1px solid black; */
+            margin-top: 50px;
+        }
+        #menu ul li{
+            list-style: none;
+            float: left;
+            line-height: 30px;
+            text-align: center;
+            margin-right:33px;
+            margin-left: 0;
+        }
+        #home{
+            width: 40px;
+        }
+        #visit{
+            width: 70px;
+        }
+        #intro{
+            width: 110px;
+        }
+        #menu .link{
+            text-decoration: none;
+            display: block;
+            color: black;
+            font-weight: bold;
+        }
+        #menu .link:hover{
+            color:rgb(117, 117, 117);
+            border-bottom: 3px solid black;
+        }
+        .writing{
+            /* border: 1px solid black; */
+            width: 100%;
+            padding-bottom: 10px;
+            padding-left: 0;
+            text-align: left;
+            font-size: 40pt;
+            font-weight: 500;
+            color: black;
+            font-family: 'Do Hyeon', sans-serif;
+            margin-top: -10px;
+            
+
+        }
+        .post{
+            display: grid;
+            /* border: 1px solid black; */
+            width: 800px;
+            margin-left: 20px;
+            grid-template-columns: 4fr 1fr;
+        }
+        .post:hover .blog{
+            color: black; 
+            text-decoration: underline;
+        }
+        a{
+            text-decoration: none;
+        }
+        .subtitle > a{
+            color: rgb(73, 73, 73);
+        }
+        .subtitle{
+        width: 600px;
+        font-size: 20px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* border: 1px solid black; */
+        color: rgb(73, 73, 73);
+        }
+        /* .subtitle > a:hover{
+            
+        color: black; 
+        text-decoration: underline;
+            
+        } */
+
+        #contents{
+        height: 60px;
+        width: 600px;
+        font-weight: 500;
+        overflow: hidden;
+        /* border: 1px solid black; */
+        display: -webkit-box; 
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        color: gray;
+        }
+        #day{
+            font-size: 10pt;
+            color: gray;
+        }
+        .address{
+            /* border: 1px solid black; */
+            width: 400px;
+            margin-top: 35px;
+            color: gray;
+            margin-left: 20px;
+        }
+        /* #title{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("http://www.koreaisacademy.com/renewal2016/img/curriculum/smart01.jpg");
+            background-size: cover; 
+        }*/
+        .inf{
+            width: 100%;
+            border-bottom: 1px solid gray;
+            padding-bottom: 30px;
+            color: gray;
+        }
+       .tag{
+        /* border: 1px solid black; */
+        margin-top: 70px;
+        font-weight: bold;
+       }
+       .contents{
+        font-size: 16pt;
+       }
+    </style>
+</head>
+<body>
+    <div class="block">
+            <div class="grid" style="border-bottom: 1px solid rgb(187, 186, 186);"></div> <!-- 빈공간 -->
+            <div class="grid" style="border-bottom: 1px solid  rgb(187, 186, 186);">
+                <h1 class="title" style=" cursor: pointer;" onclick="location.href='index.html';">신흥's 진로 블로그</h1>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html" class="link" id="home">홈</a></li>
+                        <li><a href="방명록.html" class="link" id="visit">방명록</a></li>
+                        <li><a href="intro.html" class="link" id="intro">홈페이지 소개</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="grid" style="border-bottom: 1px solid  rgb(187, 186, 186);"></div> <!-- 빈공간 -->
+
+            
+            
+            
+            
+            
+            
+            <div class="grid"></div> <!-- 빈공간 -->
+            <div class="grid" id="title">
+                <h4 class="tag">진로정보공유</h4>
+                <h1 class="writing">모바일 서비스 개발자에 대하여...</h1>
+                <h5 class="inf">김재민 2022.08.19</h5>
+                <div style="background-image: url('https://cdn.codingworldnews.com/news/photo/202010/img_1607_0.jpg'); width: 450px; height: 300px; background-size: cover; background-position: center;"></div>
+                <p class="contents">스마트폰 앱 개발자는 앱(애플리케이션의 줄인 말, 스마트폰에 다운로드해 사용할 수 있는 응용프로그램을 통칭하는 의미)<br>
+                   프로그램의 아이템을 기획하고 개발하는 일을 합니다. 하나의 앱은 보통 기획, 디자인, 개발의 과정을 거쳐 만들어집니다.<br>
+                   먼저 아이디어를 바탕으로 기존 앱과의 차별성, 시장성, 기술적 구현 가능성 등을 판단하여 앱의 개발 여부를 결정합니다.<br>
+                   앱을 만들기로 결정하였다면 앱의 목표 기능, 디자인 등을 정하여 앱을 개발합니다.<br>
+                   개발이 완료되면 내부에서 테스트를 실시하여 오류나 강화할 사항을 확인하고, 앱을 판매하는 스토어에 등록합니다.<br>
+                   사용자들에게 서비스를 하면서 앱의 오류를 지속적으로 수정하고 최신 버전으로 업데이트하는 등의 관리도 <br>
+                   스마트폰 앱 개발자의 업무입니다.</p>
+            <div id="form-commentInfo">
+                    <div id="comment-count">댓글 <span id="count">0</span></div>
+                    <input id="comment-input" placeholder="댓글을 입력해 주세요.">
+                    <button id="submit">등록</button>
+                </div>
+                <div id=comments>
+            
+                </div>
+                <script src="index.js"></script>
+            </div>
+               
+
+            <div class="grid"></div> <!-- 빈공간 -->
+            
+            
+            
+            
+            
+            
+            
+            <div class="grid" style="border-top: 1px solid rgb(187, 186, 186);"></div>  <!-- 빈공간 -->
+            <div class="grid" style="border-top: 1px solid rgb(187, 186, 186);">
+                <p class="address">TEL. 010.4491.9291 / 충청북도 청주시 청원구 율봉로 </p>
+                
+            </div>
+            <div class="grid" style="border-top: 1px solid rgb(187, 186, 186);"></div>  <!-- 빈공간 -->
+        </div>
+                 
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>홈페이지</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    
+
+
+    <style>
+        body{
+            margin: 0;
+            border: none;
+        }
+        .block{
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr;
+        grid-template-rows: 160px 1fr 100px;
+        }
+        .grid{
+             /* border: 1px solid black; */
+            }
+        .title{
+            /* border: 1px solid black; */
+            width: 300px;
+            margin-left: 50px;
+            margin-top: 20px;
+            font-family: 'Jua', sans-serif;
+            
+        }
+
+        #menu{
+            width: 800px;
+            height: 70px;
+            /* border: 1px solid black; */
+            margin-top: 50px;
+        }
+        #menu ul li{
+            list-style: none;
+            float: left;
+            line-height: 30px;
+            text-align: center;
+            margin-right:33px;
+            margin-left: 0;
+        }
+        #home{
+            width: 40px;
+        }
+        #visit{
+            width: 70px;
+        }
+        #intro{
+            width: 110px;
+        }
+        #menu .link{
+            text-decoration: none;
+            display: block;
+            color: black;
+            font-weight: bold;
+        }
+        #menu .link:hover{
+            color:rgb(117, 117, 117);
+            border-bottom: 3px solid black;
+        }
+        .writing{
+            border-bottom: 1px solid  rgb(187, 186, 186);
+            width: 1fr;
+            margin: 20px;
+            padding-bottom: 10px;
+            font-size: 14pt;
+            margin-top: 100px;
+        }
+        .post{
+            display: grid;
+            /* border: 1px solid black; */
+            width: 800px;
+            margin-left: 20px;
+            grid-template-columns: 4fr 1fr;
+        }
+        .post:hover .blog{
+            color: black; 
+            text-decoration: underline;
+        }
+        a{
+            text-decoration: none;
+        }
+        .subtitle > a{
+            color: rgb(73, 73, 73);
+        }
+        .subtitle{
+        width: 600px;
+        font-size: 20px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* border: 1px solid black; */
+        color: rgb(73, 73, 73);
+        }
+        /* .subtitle > a:hover{
+            
+        color: black; 
+        text-decoration: underline;
+            
+        } */
+
+        #contents{
+        height: 60px;
+        width: 600px;
+        font-weight: 500;
+        overflow: hidden;
+        /* border: 1px solid black; */
+        display: -webkit-box; 
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        color: gray;
+        }
+        #day{
+            font-size: 10pt;
+            color: gray;
+        }
+        .img{
+            height: 120px;
+            width: 120px;
+            background-image: url('https://post-phinf.pstatic.net/MjAxODAxMDNfMTkg/MDAxNTE0OTQwOTExMzE2.xrXUnUWpJLkKxnPPKO0j5i9oIdfJgSsdg-Rl1tWzm3Eg.Wc9UVWfKdk4P-T4_qZUwFU3Rw97HWDjWAc0X-qgolmAg.JPEG/2015-05-19-10%3B53%3B24.jpg?type=w1200');
+            background-size: cover;
+            /* border: 1px solid black; */
+            margin-top: 20px;
+            margin-left: 10px;
+            background-position: center;
+
+        }
+        .address{
+            /* border: 1px solid black; */
+            width: 400px;
+            margin-top: 35px;
+            color: gray;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+            <div class="grid" style="border-bottom: 1px solid rgb(187, 186, 186);"></div> <!-- 빈공간 -->
+            <div class="grid" style="border-bottom: 1px solid  rgb(187, 186, 186);">
+                <h1 class="title" style=" cursor: pointer;" onclick="location.href='index.html';">신흥's 진로 블로그</h1>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html" class="link" id="home">홈</a></li>
+                        <li><a href="방명록.html" class="link" id="visit">방명록</a></li>
+                        <li><a href="intro.html" class="link" id="intro">홈페이지 소개</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="grid" style="border-bottom: 1px solid  rgb(187, 186, 186);"></div> <!-- 빈공간 -->
+
+            
+            
+            
+            
+            
+            
+            <div class="grid"></div> <!-- 빈공간 -->
+            <div class="grid" style="border-right: 1px solid  rgb(187, 186, 186);;">
+                <h2 class="writing">홈페이지 소개</h2>
+
+                이 블로그는 신흥고 툴박스 동아리 원들의 진로탐색 글을 업로드 하는 블로그 입니다.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+
+            <div class="grid"></div> <!-- 빈공간 -->
+            
+            
+            
+            
+            
+            
+            
+            <div class="grid" style="border-top: 1px solid rgb(187, 186, 186);"></div>  <!-- 빈공간 -->
+            <div class="grid" style="border-top: 1px solid rgb(187, 186, 186);">
+                <p class="address">TEL. 010.4491.9291 / 충청북도 청주시 청원구 율봉로 </p>
+            </div>
+            <div class="grid" style="border-top: 1px solid rgb(187, 186, 186);"></div>  <!-- 빈공간 -->
+    </div>
+</body>
+</html>
